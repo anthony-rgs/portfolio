@@ -28,7 +28,7 @@ p {
 
 @media screen and (max-width: 660px) {
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 </style>

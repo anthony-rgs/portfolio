@@ -12,8 +12,9 @@
       interessé et c'est un milieu qui me pousse à me surpasser et à donner le
       meilleur de moi même sur chaque projet que j'entreprend.
     </p>
-    <button @click="download">Télecharger mon cv</button>
-    <a href="/cv-ringressi-anthony.pdf" download>test</a>
+    <a class="link" href="/cv-ringressi-anthony.pdf" download
+      >Télécharger mon cv.</a
+    >
   </section>
 </template>
 
@@ -25,10 +26,6 @@ export default {};
 .about {
   width: 790px;
   margin-top: 120px;
-}
-
-p {
-  line-height: 1.5em;
 }
 
 p:nth-child(3) {

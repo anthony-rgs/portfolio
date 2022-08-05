@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <Profile/>
-        <About/>
-    </div>
+  <div>
+    <Profile />
+    <About />
+    <Skills />
+    <Contact />
+  </div>
 </template>
 
-<script>
+<script></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>

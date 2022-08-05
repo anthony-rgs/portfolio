@@ -1,0 +1,44 @@
+<template>
+  <section>
+    <h2>Compétences</h2>
+    <div>
+      <p v-for="skill in skills" :key="skill">{{ skill }}</p>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Vue.js",
+        "Nuxt.js",
+        "Python",
+        "PHP",
+        "MySQL",
+        "GitHub",
+        "Git",
+        "Terminal",
+        "Figma",
+        "Strapi",
+      ],
+    };
+  },
+};
+</script>
+
+<style scoped>
+section {
+  margin-top: 160px;
+}
+
+div {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+</style>

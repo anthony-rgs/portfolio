@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       isActive: false,
-      languages: ["Français", "English", "Español"],
+      languages: ["Français", "English", "Español", "Latin"],
     };
   },
   methods: {
@@ -64,22 +64,20 @@ export default {
   width: 50px;
 }
 
-ul {
-  padding: 0;
-}
-
 li {
-  list-style: none;
-  font-family: SCP-Regular;
-  font-size: 13px;
+  font-size: 0.813rem;
 }
 
 li:nth-child(1) {
   margin: 54px 0 40px 0;
 }
 
-li:nth-child(3) {
-  margin: 40px 0 362px;
+li:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+li:nth-child(4) {
+  margin: 40px 0 304px;
 }
 
 ul.active,

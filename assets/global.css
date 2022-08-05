@@ -1,72 +1,93 @@
 @font-face {
   font-family: SCP-Regular;
-  src:url(~assets/fonts/source-code-pro.regular.ttf);
+  src: url(~assets/fonts/source-code-pro.regular.ttf);
 }
 
 @font-face {
   font-family: SCP-SemiBold;
-  src:url(~assets/fonts/SourceCodePro-Semibold.ttf);
+  src: url(~assets/fonts/SourceCodePro-Semibold.ttf);
 }
 
 @font-face {
   font-family: SCP-Bold;
-  src:url(~assets/fonts/source-code-pro.bold.ttf);
+  src: url(~assets/fonts/source-code-pro.bold.ttf);
 }
 
-*{
+* {
   --dark: #000;
-  --light: #E6E6E6;
-  --blue: #2F58D7;
+  --light: #e6e6e6;
+  --blue: #2f58d7;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   padding: 120px 120px 20px;
-  background-color:  var(--dark);
+  background-color: var(--dark);
   color: var(--light);
   transition: background 0.2s linear, color 0.2s linear;
 }
 
-.bar{
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bar {
   background-color: var(--light);
 }
 
-h1{
+h1 {
   font-family: SCP-SemiBold;
   font-size: 6.5rem;
   margin: 0px;
 }
 
-h2{
+h2 {
   font-family: SCP-Bold;
   font-size: 2.8rem;
   margin: 0px 0 40px;
 }
 
-p{
+p {
   font-family: SCP-Regular;
   font-size: 1.56rem;
   margin: 0;
+  line-height: 1.5em;
 }
 
-button{
+ul {
+  padding: 0;
+}
+
+li {
+  font-family: SCP-Regular;
+  font-size: 1.56rem;
+  line-height: 1.5em;
+  list-style: none;
+  margin: 0;
+}
+
+a {
   font-family: SCP-Regular;
   font-size: 1.25rem;
 
   border: none;
-  border-bottom: solid 3px var(--blue);
+  cursor: default;
   padding: 0 0 5px;
   text-decoration: none;
 
   background-color: transparent;
   color: var(--light);
+}
+
+.link {
+  border-bottom: solid 3px var(--blue);
 }
 
 /* Light Mode */
@@ -76,10 +97,10 @@ button{
   transition: background 0.2s linear, color 0.2s linear;
 }
 
-.bg-light .bar{
+.bg-light .bar {
   background-color: var(--dark);
 }
 
-.bg-light button{
+.bg-light a {
   color: var(--black);
 }

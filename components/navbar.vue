@@ -80,17 +80,84 @@ li:nth-child(4) {
   margin: 40px 0 304px;
 }
 
-ul.active,
-p.active {
-  animation: showup 0.7s;
+@media screen and (max-width: 1025px) {
+  .nav {
+    right: 20px;
+  }
 }
 
-@keyframes showup {
-  0% {
-    opacity: 0;
+@media screen and (max-width: 1000px) {
+  li {
+    font-size: 0.713rem;
   }
-  100% {
-    opacity: 1;
+
+  .button div:nth-child(1) {
+    width: 55px;
+  }
+
+  .button div:nth-child(2) {
+    width: 43px;
+  }
+
+  .button div:nth-child(3) {
+    width: 31px;
+  }
+
+  .active div:nth-child(2) {
+    width: 47px;
+  }
+
+  li:nth-child(4) {
+    margin: 40px 0 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  li:nth-child(1) {
+    margin: 40px 0 40px 0;
+  }
+
+  .nav {
+    right: 12px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .nav {
+    right: 5px;
+    display: none;
+  }
+
+  li {
+    font-size: 0.6rem;
+  }
+
+  .button div:nth-child(1) {
+    width: 47px;
+  }
+
+  .button div:nth-child(2) {
+    width: 35px;
+  }
+
+  .button div:nth-child(3) {
+    width: 23px;
+  }
+
+  .active div:nth-child(2) {
+    width: 40px;
+  }
+
+  li:nth-child(1) {
+    margin: 20px 0 20px 0;
+  }
+
+  li:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  li:nth-child(4) {
+    margin: 20px 0 20px;
   }
 }
 </style>

@@ -41,4 +41,30 @@ div {
   gap: 40px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1025px) {
+  div {
+    gap: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section {
+    margin-top: 120px;
+  }
+
+  div {
+    gap: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section {
+    margin-top: 100px;
+  }
+
+  div {
+    gap: 20px 20px;
+  }
+}
 </style>

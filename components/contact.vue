@@ -56,4 +56,52 @@ p:nth-child(1) {
 .links-container img {
   margin-right: 30px;
 }
+
+@media screen and (max-width: 1025px) {
+  section {
+    margin-top: 120px;
+  }
+
+  p:nth-child(1) {
+    width: 360px;
+  }
+
+  .links-container img {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  p:nth-child(1) {
+    width: 280px;
+  }
+
+  .links-container img {
+    margin-right: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section {
+    margin-top: 100px;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  p:nth-child(1) {
+    width: 100%;
+  }
+
+  .links-container img {
+    margin-right: 20px;
+    width: 15px;
+  }
+
+  .links-container a {
+    margin-top: 20px;
+  }
+}
 </style>

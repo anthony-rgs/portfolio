@@ -104,3 +104,59 @@ a {
 .bg-light a {
   color: var(--black);
 }
+
+@media screen and (max-width: 1025px) {
+  body {
+    padding: 120px 100px 20px;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.26rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    padding: 120px 80px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  body {
+    padding: 20px 20px 20px 20px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  a {
+    font-size: 0.7rem;
+  }
+}

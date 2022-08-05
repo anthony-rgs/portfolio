@@ -31,4 +31,31 @@ export default {};
 p:nth-child(3) {
   margin: 40px 0;
 }
+
+@media screen and (max-width: 1025px) {
+  .about {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  p:nth-child(3) {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about {
+    margin-top: 100px;
+  }
+
+  p:nth-child(3) {
+    margin: 20px 0;
+  }
+}
 </style>

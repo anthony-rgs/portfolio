@@ -7,32 +7,34 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      mode: [
-        { light: 'Light' },
-        { dark: 'Dark' },
-      ],
-      active: false
-    }
+      mode: [{ light: "Light" }, { dark: "Dark" }],
+      active: false,
+    };
   },
   methods: {
     switchMode() {
-      this.active = !this.active
+      this.active = !this.active;
       if (this.active === true) {
-        document.body.classList.add('bg-light')}
-      else {
-        document.body.classList.remove('bg-light')
+        document.body.classList.add("bg-light");
+      } else {
+        document.body.classList.remove("bg-light");
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-p{
+p {
   font-family: SCP-Regular;
-  font-size: 13px;
+  font-size: 0.813rem;
 }
 
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 0.713rem;
+  }
+}
 </style>

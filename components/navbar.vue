@@ -83,6 +83,7 @@ li:nth-child(4) {
 @media screen and (max-width: 1025px) {
   .nav {
     right: 20px;
+    top: 30px;
   }
 }
 
@@ -119,6 +120,7 @@ li:nth-child(4) {
 
   .nav {
     right: 12px;
+    top: 20px;
   }
 }
 

@@ -42,7 +42,7 @@ body {
   background-color: var(--light);
 }
 
-h1 {
+.title {
   font-family: SCP-SemiBold;
   font-size: 6.5rem;
   margin: 0px;
@@ -107,7 +107,7 @@ a {
 
 @media screen and (max-width: 1025px) {
   body {
-    padding: 120px 100px 20px;
+    padding: 100px 100px 20px;
   }
 
   h2 {
@@ -125,7 +125,7 @@ a {
 
 @media screen and (max-width: 850px) {
   body {
-    padding: 120px 80px 20px;
+    padding: 80px 80px 20px;
   }
 
   h2 {
@@ -144,7 +144,7 @@ a {
 
 @media screen and (max-width: 660px) {
   body {
-    padding: 20px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
   }
 
   h2 {
@@ -158,5 +158,11 @@ a {
 
   a {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  body {
+    padding: 20px;
   }
 }

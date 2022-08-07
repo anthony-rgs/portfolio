@@ -3,7 +3,7 @@
     <div class="profile-informations">
       <div class="name">
         <p class="title">Anthony</p>
-        <p class="title">RINGRESSI</p>
+        <p class="title">Ringressi</p>
       </div>
 
       <img src="~assets/images/picture-me.webp" />
@@ -114,12 +114,12 @@ img {
     flex-direction: column-reverse;
   }
 
-  .title:nth-child(1) {
+  /* .title:nth-child(1) {
     margin-top: 10px;
-  }
+  } */
 
   .title:nth-child(2) {
-    margin: 0 27px -11px;
+    margin: 0;
   }
 
   .name {

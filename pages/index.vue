@@ -2,6 +2,7 @@
   <div>
     <Profile />
     <About />
+    <Projects />
     <Skills />
     <Contact />
   </div>

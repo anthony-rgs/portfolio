@@ -16,7 +16,7 @@
 * {
   --dark: #000;
   --light: #e6e6e6;
-  --blue: #2f58d7;
+  --color: #2f58d7;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -87,7 +87,20 @@ a {
 }
 
 .link {
-  border-bottom: solid 3px var(--blue);
+  border-bottom: solid 3px var(--color);
+}
+
+.first-button {
+  margin-right: 120px;
+}
+
+.role-techs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  margin-top: 160px;
 }
 
 /* Light Mode */

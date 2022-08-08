@@ -1,14 +1,11 @@
 <template>
   <div>
-    <Navbar/>
-    <Nuxt/>
-    <Footer/>
+    <Navbar />
+    <Nuxt />
+    <Footer />
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
-<style>
-
-</style>
+<style></style>

@@ -16,9 +16,7 @@
 </template>
 
 <script>
-import switchMode from "./switchMode.vue";
 export default {
-  components: { switchMode },
   data() {
     return {
       isActive: false,
@@ -43,7 +41,7 @@ export default {
 .button div {
   height: 3px;
   margin-bottom: 5px;
-  background-color: var(--blue);
+  background-color: var(--color);
   transition: all 0.3s ease-in-out;
 }
 

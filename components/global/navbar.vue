@@ -66,8 +66,9 @@ li {
   font-size: 0.813rem;
 }
 
-li:nth-child(1) {
-  margin: 54px 0 40px 0;
+li:nth-child(1),
+li:nth-child(4) {
+  margin: 40px 0;
 }
 
 li:nth-child(2) {
@@ -75,7 +76,7 @@ li:nth-child(2) {
 }
 
 li:nth-child(4) {
-  margin: 40px 0 304px;
+  margin: 40px 0;
 }
 
 @media screen and (max-width: 1025px) {
@@ -105,17 +106,9 @@ li:nth-child(4) {
   .active div:nth-child(2) {
     width: 47px;
   }
-
-  li:nth-child(4) {
-    margin: 40px 0 40px;
-  }
 }
 
 @media screen and (max-width: 850px) {
-  li:nth-child(1) {
-    margin: 40px 0 40px 0;
-  }
-
   .nav {
     right: 12px;
     top: 20px;
@@ -148,16 +141,13 @@ li:nth-child(4) {
     width: 40px;
   }
 
-  li:nth-child(1) {
-    margin: 20px 0 20px 0;
+  li:nth-child(1),
+  li:nth-child(4) {
+    margin: 20px 0;
   }
 
   li:nth-child(2) {
     margin-bottom: 20px;
-  }
-
-  li:nth-child(4) {
-    margin: 20px 0 20px;
   }
 }
 </style>

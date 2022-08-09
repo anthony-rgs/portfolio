@@ -14,7 +14,7 @@
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
-      <ProjectsTechs :text="this.techs" />
+      <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />
     </div>
     <ProjectsGallery :images="this.gallery" />
   </section>
@@ -29,12 +29,13 @@ export default {
       image: "/projects/colladraw/colladraw-main.webp",
       about:
         "Issu d'un projet scolaire, Colladraw est un 'Paint' collaboratif en ligne où vous pouvez dessiner avec vos amis sur la même toile.",
-      githubText: "Voir le code",
+      githubText: "Voir le code.",
       githubLink: "https://github.com/baptistedph/colladraw",
-      siteText: "Voir le site",
+      siteText: "Voir le site.",
       siteLink: "https://colladraw.fun",
       role: "Designer & Développeur",
-      techs: "JS - Laravel - MySQL - Figma",
+      techsTitle: "Langages & Outils",
+      techsText: "JS - Laravel - MySQL - Figma",
       gallery: [
         { url: "/projects/colladraw/colladraw-1.webp" },
         { url: "/projects/colladraw/colladraw-2.webp" },
@@ -42,6 +43,12 @@ export default {
         { url: "/projects/colladraw/colladraw-4.webp" },
       ],
     };
+  },
+
+  created() {
+    if (process.browser) {
+      window.parent.document.title = "Anthony Ringressi - Colladraw";
+    }
   },
 };
 </script>

@@ -53,9 +53,9 @@ export default {
           link: "/projects/wanned",
         },
         {
-          image: "/projects/reseau-social-main.webp",
+          image: "/projects/maggle/maggle-main.webp",
           text: "Projet scolaire en back. Le but était de réaliser un réseau social avec de nombreuses fonctionnalités.",
-          link: "/projects/reseau-social",
+          link: "/projects/maggle",
         },
         {
           image: "/projects/openfoodfacts/openfoodfacts-main.webp",
@@ -69,7 +69,7 @@ export default {
         },
         {
           image: "/projects/mastermind/mastermind-main.webp",
-          text: " Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
+          text: "Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
           link: "/projects/mastermind",
         },
       ],

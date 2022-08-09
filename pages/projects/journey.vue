@@ -14,7 +14,7 @@
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
-      <ProjectsTechs :text="this.techs" />
+      <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />
     </div>
     <ProjectsGallery :images="this.gallery" />
   </section>
@@ -24,23 +24,30 @@
 export default {
   data() {
     return {
-      title: "Journey",
+      title: "JOURNEY",
       date: "Juin - 2022",
       image: "/projects/journey/journey-main.webp",
       about:
         "Progressive Web App qui propose de nombreux parcours qui mettent en avant les commercants et les endroits atypiques autour d'un monument. Ce projet scolaire est une preuve de concept.",
-      githubText: "Voir le code",
+      githubText: "Voir le code.",
       githubLink: "https://github.com/Leambr/Journey",
-      siteText: "Voir le site",
+      siteText: "Voir le site.",
       siteLink: "https://journey.anth.ooo",
       role: "Designer & Développeur",
-      techs: "React - PHP - Figma",
+      techsTitle: "Langages & Outil",
+      techsText: "React - PHP - Figma",
       gallery: [
         { url: "/projects/journey/journey-1.webp" },
         { url: "/projects/journey/journey-2.webp" },
         { url: "/projects/journey/journey-3.webp" },
       ],
     };
+  },
+
+  created() {
+    if (process.browser) {
+      window.parent.document.title = "Anthony Ringressi - Journey";
+    }
   },
 };
 </script>

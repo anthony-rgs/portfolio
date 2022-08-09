@@ -18,9 +18,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .project-resentation-container {
   margin-top: -80px;
+}
+
+.title {
+  font-size: 5rem;
 }
 
 .project-resentation-container div {

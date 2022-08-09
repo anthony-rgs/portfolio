@@ -14,7 +14,7 @@
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
-      <ProjectsTechs :text="this.techs" />
+      <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />
     </div>
     <ProjectsGallery :images="this.gallery" />
   </section>
@@ -29,12 +29,13 @@ export default {
       image: "/projects/latelier12/latelier12-main.webp",
       about:
         "Premier projet professionnel qui consistait à la conception et réalisation d’un site vitrine pour un salon de coiffure situé dans le 5ème arrondissement de Paris.",
-      githubText: "Voir le code",
+      githubText: "Voir le code.",
       githubLink: "https://github.com/anthony-rgs/atelier12-frontend",
-      siteText: "Voir le site",
+      siteText: "Voir le site.",
       siteLink: "https://latelier12.fr",
       role: "Designer & Développeur",
-      techs: "HTML - CSS - JS - Figma",
+      techsTitle: "Langages & Outil",
+      techsText: "HTML - CSS - JS - Figma",
       gallery: [
         { url: "/projects/latelier12/latelier12-1.webp" },
         { url: "/projects/latelier12/latelier12-2.webp" },
@@ -42,6 +43,12 @@ export default {
         { url: "/projects/latelier12/latelier12-4.webp" },
       ],
     };
+  },
+
+  created() {
+    if (process.browser) {
+      window.parent.document.title = "Anthony Ringressi - L'Atelier 12";
+    }
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <h2>Compétences</h2>
     <div>
       <p v-for="skill in skills" :key="skill">{{ skill }}</p>
@@ -32,10 +32,6 @@ export default {
 </script>
 
 <style scoped>
-section {
-  margin-top: 160px;
-}
-
 div {
   display: flex;
   gap: 40px;
@@ -49,20 +45,12 @@ div {
 }
 
 @media screen and (max-width: 850px) {
-  section {
-    margin-top: 120px;
-  }
-
   div {
     gap: 30px 20px;
   }
 }
 
 @media screen and (max-width: 660px) {
-  section {
-    margin-top: 100px;
-  }
-
   div {
     gap: 20px 20px;
   }

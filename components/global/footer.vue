@@ -31,4 +31,10 @@ p {
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
 </style>

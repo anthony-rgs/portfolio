@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <h2>Projets</h2>
     <div class="project-container">
       <img
@@ -44,12 +44,12 @@ export default {
         },
         {
           image: "/projects/journey/journey-main.webp",
-          text: "Progressive Web App qui propose de nombreux parcours qui mettent en avant les commercants et les endroits atypiques autour d'un monument. Ce projet scolaire est une preuve de concept.",
+          text: "Progressive Web App qui propose de nombreux parcours qui mettent en avant les commercants et les endroits atypiques autour d'un monument.",
           link: "/projects/journey",
         },
         {
           image: "/projects/wanned/wanned-main.webp",
-          text: "RPG réalisé dans le cadre d'un projet scolaire. Suivez l'aventure de Baptiste à travers les sous-sols de l’école pour découvrir la raison d'une mystérieuse panne.",
+          text: "RPG réalisé dans le cadre d'un projet scolaire. Suivez l'aventure de Baptiste à travers les sous-sols de l’école.",
           link: "/projects/wanned",
         },
         {
@@ -106,10 +106,6 @@ export default {
 </script>
 
 <style scoped>
-section {
-  margin-top: 160px;
-}
-
 .project-container {
   display: flex;
   justify-content: space-between;
@@ -150,7 +146,6 @@ a {
 
 .after,
 .before {
-  /* background-color: blueviolet; */
   padding: 0 20px;
 }
 
@@ -168,5 +163,84 @@ a {
 .active {
   opacity: 1;
   transition: opacity 0.4s ease;
+}
+
+@media screen and (max-width: 1370px) {
+  img {
+    width: 500px;
+  }
+
+  .bar {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  img {
+    width: 400px;
+  }
+
+  .bar {
+    height: 229px;
+  }
+
+  .text-container {
+    width: 350px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  img {
+    width: 100%;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .text-container {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .link {
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .project-container {
+    display: block;
+  }
+
+  .switch-project {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .text-container,
+  .link {
+    margin-top: 20px;
+  }
+
+  .switch-project {
+    margin-top: 40px;
+  }
+
+  .switch {
+    height: 30px;
+  }
+
+  .after,
+  .before {
+    padding: 0 15px;
+  }
 }
 </style>

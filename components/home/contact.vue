@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <h2>Contact</h2>
     <div class="contact">
       <p>
@@ -29,10 +29,6 @@ export default {};
 </script>
 
 <style scoped>
-section {
-  margin-top: 160px;
-}
-
 p:nth-child(1) {
   width: 460px;
 }
@@ -58,10 +54,6 @@ p:nth-child(1) {
 }
 
 @media screen and (max-width: 1025px) {
-  section {
-    margin-top: 120px;
-  }
-
   p:nth-child(1) {
     width: 360px;
   }
@@ -83,10 +75,6 @@ p:nth-child(1) {
 }
 
 @media screen and (max-width: 660px) {
-  section {
-    margin-top: 100px;
-  }
-
   .contact {
     display: block;
   }

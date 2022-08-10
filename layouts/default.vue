@@ -2,14 +2,13 @@
   <div class="portfolio-container" :class="{ show: isActive }">
     <Navbar />
     <Nuxt />
+
     <Footer />
   </div>
 </template>
 
 <script>
-import profile from "~/components/home/profile.vue";
 export default {
-  components: { profile },
   data() {
     return {
       isActive: false,
@@ -23,7 +22,7 @@ export default {
 
 <style>
 .portfolio-container {
-  opacity: 0;
+  opacity: 1;
 }
 
 .show {

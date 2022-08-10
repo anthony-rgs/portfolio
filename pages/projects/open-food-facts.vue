@@ -50,7 +50,7 @@ export default {
 
 <style>
 * {
-  --color: #74c69d;
+  --color: #47ae7a;
 }
 
 .date {

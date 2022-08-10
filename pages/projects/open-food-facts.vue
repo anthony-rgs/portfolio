@@ -8,8 +8,6 @@
     <About> {{ about }} </About>
 
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
-    <ButtonsLink :text="this.siteText" :link="this.siteLink" />
-
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
       <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />

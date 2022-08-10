@@ -1,8 +1,7 @@
 <template>
   <div class="portfolio-container" :class="{ show: isActive }">
-    <Navbar />
+    <SwitchMode />
     <Nuxt />
-
     <Footer />
   </div>
 </template>
@@ -22,7 +21,7 @@ export default {
 
 <style>
 .portfolio-container {
-  opacity: 1;
+  opacity: 0;
 }
 
 .show {

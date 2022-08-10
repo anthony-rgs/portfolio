@@ -110,25 +110,26 @@ img {
 }
 
 @media screen and (max-width: 345px) {
-  .profile-informations {
-    flex-direction: column-reverse;
-  }
-
-  /* .title:nth-child(1) {
-    margin-top: 10px;
-  } */
-
-  .title:nth-child(2) {
-    margin: 0;
-  }
-
-  .name {
-    align-self: flex-start;
+  .title {
+    font-size: 1.7rem;
   }
 
   img {
-    width: 180px;
-    height: 100%;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 308px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .title:nth-child(2) {
+    margin: 0 0 -9px;
+  }
+
+  img {
+    height: 120px;
   }
 }
 </style>

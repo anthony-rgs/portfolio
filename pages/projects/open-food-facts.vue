@@ -8,6 +8,8 @@
     <About> {{ about }} </About>
 
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
+    <ButtonsLink :text="this.siteText" :link="this.siteLink" />
+
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
       <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />
@@ -54,7 +56,21 @@ export default {
 }
 
 .date {
-  margin-top: 287px;
-  padding-top: 100px;
+  top: 557px;
+  right: 820px;
+}
+
+@media screen and (max-width: 1140px) {
+  .date {
+    top: 500px;
+    right: 735px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .date {
+    top: 480px;
+    right: 715px;
+  }
 }
 </style>

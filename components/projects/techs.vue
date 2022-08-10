@@ -13,3 +13,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+@media screen and (max-width: 900px) {
+  section {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  section {
+    margin-top: 100px;
+  }
+}
+</style>

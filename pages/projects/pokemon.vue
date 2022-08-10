@@ -6,12 +6,14 @@
       :image="this.image"
     />
     <About> {{ about }} </About>
-    <ButtonsLink
-      class="first-button"
-      :text="this.githubText"
-      :link="this.githubLink"
-    />
-    <ButtonsLink :text="this.siteText" :link="this.siteLink" />
+    <div class="buttons-container">
+      <ButtonsLink
+        class="first-button"
+        :text="this.githubText"
+        :link="this.githubLink"
+      />
+      <ButtonsLink :text="this.siteText" :link="this.siteLink" />
+    </div>
     <div class="section role-techs">
       <ProjectsRole :text="this.role" />
       <ProjectsTechs :title="this.techsTitle" :text="this.techsText" />
@@ -55,9 +57,22 @@ export default {
 * {
   --color: #3a86ff;
 }
-
 .date {
-  margin-top: 276px;
-  padding-top: 110px;
+  top: 550px;
+  right: 810px;
+}
+
+@media screen and (max-width: 1140px) {
+  .date {
+    top: 505px;
+    right: 720px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .date {
+    top: 494px;
+    right: 710px;
+  }
 }
 </style>

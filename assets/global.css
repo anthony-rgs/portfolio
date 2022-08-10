@@ -140,6 +140,12 @@ a {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .role-techs {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 850px) {
   body {
     padding: 80px 80px 20px;
@@ -179,6 +185,24 @@ a {
 
   a {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .first-button {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .first-button {
+    margin: 0 0 20px;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
   }
 }
 

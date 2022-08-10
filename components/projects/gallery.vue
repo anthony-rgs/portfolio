@@ -39,4 +39,15 @@ export default {
 img:nth-child(2) {
   padding-bottom: 0px;
 }
+
+@media screen and (max-width: 661px) {
+  .container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container img:last-child {
+    margin-bottom: 0px;
+  }
+}
 </style>

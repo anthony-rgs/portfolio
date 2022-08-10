@@ -56,7 +56,21 @@ export default {
 }
 
 .date {
-  margin-top: 287px;
-  padding-top: 100px;
+  top: 557px;
+  right: 820px;
+}
+
+@media screen and (max-width: 1140px) {
+  .date {
+    top: 510px;
+    right: 735px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .date {
+    top: 500px;
+    right: 715px;
+  }
 }
 </style>

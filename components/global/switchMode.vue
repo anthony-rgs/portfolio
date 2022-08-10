@@ -1,7 +1,11 @@
 <template>
   <div>
-    <p v-if="active === false" @click="switchMode">{{ mode[0].light }}</p>
-    <p v-if="active === true" @click="switchMode">{{ mode[1].dark }}</p>
+    <p class="light" v-if="active === false" @click="switchMode">
+      {{ mode[0].light }}
+    </p>
+    <p class="dark" v-if="active === true" @click="switchMode">
+      {{ mode[1].dark }}
+    </p>
   </div>
 </template>
 
@@ -9,7 +13,7 @@
 export default {
   data() {
     return {
-      mode: [{ light: "Light" }, { dark: "Dark" }],
+      mode: [{ light: "Clair" }, { dark: "Sombre" }],
       active: false,
     };
   },
@@ -27,14 +31,48 @@ export default {
 </script>
 
 <style scoped>
+.light,
+.dark {
+  position: fixed;
+  top: 50px;
+}
+
+.light {
+  right: 40px;
+}
+
+.dark {
+  right: 37px;
+}
+
 p {
   font-family: SCP-Regular;
   font-size: 0.813rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
+  .light {
+    right: 30px;
+  }
+
+  .dark {
+    right: 27px;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .light {
+    right: 20px;
+  }
+
+  .dark {
+    right: 17px;
+  }
+}
+
+@media screen and (max-width: 661px) {
   p {
-    font-size: 0.713rem;
+    display: none;
   }
 }
 </style>

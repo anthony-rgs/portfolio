@@ -3,7 +3,6 @@
     <SwitchMode />
     <Nuxt />
     <Footer />
-    <p>test</p>
   </div>
 </template>
 

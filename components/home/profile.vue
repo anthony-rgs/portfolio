@@ -2,8 +2,8 @@
   <div class="container-profile">
     <div class="profile-informations">
       <div class="name">
-        <p class="title">Anthony</p>
-        <p class="title">Ringressi</p>
+        <p class="title">{{ name }}</p>
+        <p class="title">{{ surname }}</p>
       </div>
 
       <img src="~assets/images/picture-me.webp" />
@@ -12,7 +12,16 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      name: "Anthony",
+      surname: "Ringressi",
+    };
+  },
+};
+</script>
 
 <style scoped>
 .profile-informations {

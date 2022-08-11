@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"> </About>
     <div class="buttons-container">
       <ButtonsLink
         class="first-button"
@@ -30,7 +30,7 @@ export default {
       date: "Juin - 2022",
       image: "/projects/pokemon/pokemon-main.webp",
       about:
-        "Site permettant de rechercher des cartes Pokémon et d'obtenir des informations sur ces dernières grâce à des requètes API avec Axios.",
+        "Afin d'apprendre Vue.js et de faire des requêtes API avec Axios, j'ai effectué ce petit projet qui permet de consulter n'importe quelle carte Pokémon grâce à l'API de pokemontcg. <br> <br> Suite à la recherche, toutes les cartes portant ce nom s'affichent et il est possible de cliquer sur ces dernières pour avoir des informations plus précises comme le nom de l'artiste, de quelle série elle provient ou son prix. <br> <br> Il est également possible de cliquer sur le logo de CardMarket afin d'avoir accès au site et de pouvoir acheter la carte. <br> <br> Les recherches de Pokémon se font en anglais.",
       githubText: "Voir le code.",
       githubLink: "https://github.com/anthony-rgs/pokemon-cards",
       siteText: "Voir le site.",

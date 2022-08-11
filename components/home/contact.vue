@@ -1,23 +1,13 @@
 <template>
   <section class="section">
-    <h2>Contact</h2>
+    <h2>{{ title }}</h2>
     <div class="contact">
-      <p>
-        Si vous avez une question ou une remarque n’hésitez pas à me contacter
-        par mail ou via mes réseaux sociaux.
-      </p>
+      <p>{{ text }}</p>
+
       <div class="links-container">
-        <a href="https://www.linkedin.com/in/anthony-ringressi/" target="blank">
-          <img src="~assets/icons/linkedin.svg" alt="Linkedin icon" />
-          <p>Anthony Ringressi</p>
-        </a>
-        <a href="mailto::contact@anth.ooo?subject=Coucou :)" target="blank">
-          <img src="~assets/icons/mail.svg" alt="Mail icon" />
-          <p>contact@anth.ooo</p>
-        </a>
-        <a href="https://github.com/anthony-rgs" target="blank">
-          <img src="~assets/icons/github.svg" alt="Github icon" />
-          <p>anthony-rgs</p>
+        <a v-for="link in links" :key="link" :href="link[0]" target="blank">
+          <img :src="link[1]" alt="Icon" />
+          <p>{{ link[2] }}</p>
         </a>
       </div>
     </div>
@@ -25,7 +15,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      title: "Contact",
+      text: "Si vous avez une question ou une remarque n’hésitez pas à me contacter par mail ou via mes réseaux sociaux.",
+
+      links: [
+        [
+          "https://www.linkedin.com/in/anthony-ringressi/",
+          "/icons/linkedin.svg",
+          "Anthony Ringressi",
+        ],
+
+        [
+          "mailto:contact@anth.ooo?subject=Coucou :)",
+          "/icons/mail.svg",
+          "contact@anth.ooo",
+        ],
+        ["https://github.com/anthony-rgs", "/icons/github.svg", "anthony-rgs"],
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>

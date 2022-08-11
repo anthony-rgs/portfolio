@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"> </About>
     <div class="buttons-container">
       <ButtonsLink
         class="first-button"
@@ -30,7 +30,7 @@ export default {
       date: "March - 2022",
       image: "/projects/colladraw/colladraw-main.webp",
       about:
-        "Issu d'un projet scolaire, Colladraw est un 'Paint' collaboratif en ligne où vous pouvez dessiner avec vos amis sur la même toile.",
+        "Colladraw est une application de dessin en ligne réalisée en 1 semaine dans le cadre d'un projet full-stack en équipe. <br> <br> En plus de pouvoir dessiner, Colladraw propose une collaboration en temps réel et la création de compte pour sauvegarder ses dessins automatiquement dans le cloud.",
       githubText: "Voir le code.",
       githubLink: "https://github.com/baptistedph/colladraw",
       siteText: "Voir le site.",

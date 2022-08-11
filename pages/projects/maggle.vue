@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"> </About>
     <ButtonsLink
       class="first-button"
       :text="this.githubText"
@@ -27,7 +27,7 @@ export default {
       date: "Mai - 2022",
       image: "/projects/maggle/maggle-main.webp",
       about:
-        "Projet scolaire en back. Le but était de réaliser un réseau social avec de nombreuses fonctionnalités.",
+        "Dans le cadre d'un projet scolaire de une semaine en équipe, nous avons eu pour consigne de faire un réseau social en back. <br> <br> Ce projet contient de nombreuses fonctionnalités comme la possibilitée de créer un compte, de se déconnecter, d'écrire des posts, de modifier toutes les informations de son profil, de rechercher et d'ajouter des amis, des groupes ou des pages. ",
       githubText: "Voir le code.",
       githubLink: "https://github.com/clementpnn/reseaux_php",
       role: "Développeur & Designer",

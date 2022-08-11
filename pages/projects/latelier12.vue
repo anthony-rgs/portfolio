@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"> </About>
     <div class="buttons-container">
       <ButtonsLink
         class="first-button"
@@ -30,7 +30,7 @@ export default {
       date: "Mai - 2022",
       image: "/projects/latelier12/latelier12-main.webp",
       about:
-        "Premier projet professionnel qui consistait à la conception et réalisation d’un site vitrine pour un salon de coiffure situé dans le 5ème arrondissement de Paris.",
+        "Pour mon premier projet professionnel j'ai eu l'opportunité de travailler sur la conception et la réalisation d’un site vitrine pour un salon de coiffure, situé dans le 5ème arrondissement de Paris. <br> <br> La cliente avait besoin d’un site vitrine avec les tarifs, les infos pratiques et les informations des produits qu’elle vend dans son salon. <br> <br> Elle voulait que le site soit moderne et épuré.",
       githubText: "Voir le code.",
       githubLink: "https://github.com/anthony-rgs/atelier12-frontend",
       siteText: "Voir le site.",

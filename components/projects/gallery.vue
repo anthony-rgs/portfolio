@@ -1,6 +1,6 @@
 <template>
   <section class="section gallery">
-    <h2>Galerie</h2>
+    <h2>{{ title }}</h2>
     <div class="container">
       <img
         v-for="(image, indice) in images"
@@ -16,6 +16,11 @@
 export default {
   props: {
     images: Array,
+  },
+  data() {
+    return {
+      title: "Galerie",
+    };
   },
 };
 </script>

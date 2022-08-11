@@ -1,12 +1,17 @@
 <template>
   <section class="about">
-    <h2>À propos</h2>
-    <p><slot> </slot></p>
+    <h2>{{ title }}</h2>
+    <p v-html="text"></p>
   </section>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      title: "À propos",
+    };
+  },
   props: {
     text: String,
   },

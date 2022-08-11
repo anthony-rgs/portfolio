@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"></About>
 
     <ButtonsLink :text="this.siteText" :link="this.siteLink" />
     <div class="section role-techs">
@@ -24,7 +24,7 @@ export default {
       date: "Mai - 2022",
       image: "/projects/openfoodfacts/openfoodfacts-main.webp",
       about:
-        "Refonte du site Open Food Facts. L'objectif de ce projet scolaire était de nous apprendre à utiliser Figma et de rendre le site plus intuitif, moderne et épuré.",
+        "Refonte côté design du site de Open Food Facts réalisée en 1 semaine lors d'un projet scolaire en équipe. <br> <br> L'objectif de ce projet était d'approfondir nos connaissances avec l'utilisation de Figma et de rendre le site plus intuitif, moderne et épuré. <br> <br> Nous devions travailler seulement sur la page d'accueil et la page produit.",
       siteText: "Voir la maquette.",
       siteLink:
         "https://www.figma.com/file/kSdPNBV8rToXUqsNP66wqJ/Projet?node-id=1%3A4",

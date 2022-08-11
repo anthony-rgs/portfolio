@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"> </About>
     <div class="buttons-container">
       <ButtonsLink
         class="first-button"
@@ -30,7 +30,7 @@ export default {
       date: "Avril - 2022",
       image: "/projects/wanned/wanned-main.webp",
       about:
-        "RPG réalisé dans le cadre d'un projet scolaire. Suivez l'aventure de Baptiste à travers les sous-sols de l’école pour découvrir la raison d'une mystérieuse panne. Maps réalisées avec tyled",
+        "RPG réalisé en deux semaines dans le cadre d'un projet front en équipe. <br> <br> À l’école du web, HETIC, la Wifi ne fonctionne plus depuis maintenant 3 jours. Suivez l’aventure d’un valeureux guerrier nommé Baptiste, et aidez le a se frayer un chemin à travers les sous-sols de l’école pour découvrir la raison de cette mystérieuse panne... <br> </br> Les maps ont été réalisées avec Tiled et les personnages en Pixel Art avec Photshop. <br> <br> Le jeu n'est jouable que sur PC.",
       githubText: "Voir le code.",
       githubLink: "https://github.com/anthony-rgs/wanned",
       siteText: "Voir le site.",

@@ -1,16 +1,18 @@
 <template>
   <section class="section">
-    <h2>Projets</h2>
+    <h2>{{ title }}</h2>
     <div class="project-container">
       <img
         :src="projects[projectNumber].image"
-        alt="L'Atelier Image"
+        alt="Image"
         v-bind:class="{ active: isActive }"
       />
       <div class="bar"></div>
       <div class="text-container" v-bind:class="{ active: isActive }">
         <p>{{ projects[projectNumber].text }}</p>
-        <a class="link" :href="projects[projectNumber].link">Voir le projet.</a>
+        <a class="link" :href="projects[projectNumber].link">{{
+          buttonText
+        }}</a>
       </div>
     </div>
     <div class="switch-project">
@@ -31,10 +33,12 @@ export default {
     return {
       projectNumber: 0,
       isActive: true,
+      title: "Projets",
+      buttonText: "Voir le projet.",
       projects: [
         {
           image: "/projects/latelier12/latelier12-main.webp",
-          text: "Premier projet professionnel qui consistait à la conception et réalisation d’un site vitrine pour un salon de coiffure. ",
+          text: "Lors de mon premier projet professionnel, j'ai travaillé sur la conception et la réalisation d’un site vitrine pour un salon de coiffure.",
           link: "/projects/latelier12",
         },
         {
@@ -49,7 +53,7 @@ export default {
         },
         {
           image: "/projects/wanned/wanned-main.webp",
-          text: "RPG réalisé dans le cadre d'un projet scolaire. Suivez l'aventure de Baptiste à travers les sous-sols de l’école.",
+          text: "RPG réalisé dans le cadre d'un projet scolaire. Plusieurs épreuves sont à relever comme des énigmes ou des combats. ",
           link: "/projects/wanned",
         },
         {
@@ -59,7 +63,7 @@ export default {
         },
         {
           image: "/projects/openfoodfacts/openfoodfacts-main.webp",
-          text: "Refonte du site Open Food Facts. L'objectif de ce projet scolaire était de nous apprendre à utiliser Figma et de rendre le site plus intuitif, moderne et épuré.",
+          text: "L'objectif de ce projet scolaire était de nous apprendre à utiliser Figma en effectuant la refonte du site Open Food Facts. ",
           link: "/projects/open-food-facts",
         },
         {

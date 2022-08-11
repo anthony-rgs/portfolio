@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <h2>Compétences</h2>
+    <h2>{{ title }}</h2>
     <div>
       <p v-for="skill in skills" :key="skill">{{ skill }}</p>
     </div>
@@ -11,6 +11,7 @@
 export default {
   data() {
     return {
+      title: "Compétences",
       skills: [
         "HTML5",
         "CSS3",

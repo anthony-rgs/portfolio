@@ -1,12 +1,17 @@
 <template>
   <section>
-    <h2>Rôle</h2>
+    <h2>{{ title }}</h2>
     <p>{{ text }}</p>
   </section>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      title: "Rôle",
+    };
+  },
   props: {
     text: String,
   },

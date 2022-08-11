@@ -5,7 +5,7 @@
       :date="this.date"
       :image="this.image"
     />
-    <About> {{ about }} </About>
+    <About :text="this.about"></About>
     <div class="buttons-container">
       <ButtonsLink
         class="first-button"
@@ -30,7 +30,7 @@ export default {
       date: "Février - 2022",
       image: "/projects/mastermind/mastermind-main.webp",
       about:
-        "Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
+        "Mastermind sur 10 manches, réalisé lors de mon premier projet front. <br> <br>La consigne était de réaliser un Mastermind console en JavaScript. J'ai essayé d'aller plus loin en ajoutant de nombreuses fonctionnalités comme une interface graphique (avec responsive), un light mode et surtout un lecteur musique pour animer vos parties !",
       githubText: "Voir le code.",
       githubLink: "https://github.com/anthony-rgs/mastermind",
       siteText: "Voir le site.",

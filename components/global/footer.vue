@@ -1,11 +1,17 @@
 <template>
   <div>
-    <p>© 2022 - Anthony Ringressi</p>
+    <p>{{ footerText }}</p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      footerText: "© 2022 - Anthony Ringressi",
+    };
+  },
+};
 </script>
 
 <style scoped>

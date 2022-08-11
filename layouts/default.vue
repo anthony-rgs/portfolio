@@ -3,6 +3,7 @@
     <SwitchMode />
     <Nuxt />
     <Footer />
+    <p>test</p>
   </div>
 </template>
 
@@ -13,8 +14,21 @@ export default {
       isActive: false,
     };
   },
+  methods: {
+    checkStatus() {
+      if (process.client) {
+        if (localStorage.getItem("lightMode") === "true") {
+          document.body.classList.add("bg-light");
+        }
+      }
+    },
+  },
   mounted() {
+    if (localStorage.getItem("lightMode") === null) {
+      localStorage.setItem("lightMode", "false");
+    }
     this.isActive = true;
+    this.checkStatus();
   },
 };
 </script>

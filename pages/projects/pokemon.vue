@@ -1,5 +1,6 @@
 <template>
   <section>
+    <ButtonsBack />
     <ProjectsProjectPresentation
       :title="this.title"
       :date="this.date"

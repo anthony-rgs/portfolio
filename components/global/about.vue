@@ -35,7 +35,7 @@ p {
   }
 
   p {
-    margin-bottom: -80px;
+    margin-bottom: 100px;
   }
 }
 

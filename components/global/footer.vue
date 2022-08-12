@@ -26,6 +26,12 @@ p {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 1700px) {
+  p {
+    font-size: 38px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   div {
     margin-top: 120px;

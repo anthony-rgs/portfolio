@@ -64,18 +64,6 @@ p {
   line-height: 1.5em;
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  font-family: SCP-Regular;
-  font-size: 1.56rem;
-  line-height: 1.5em;
-  list-style: none;
-  margin: 0;
-}
-
 a {
   font-family: SCP-Regular;
   font-size: 1.25rem;
@@ -107,8 +95,24 @@ a {
 }
 
 @media screen and (min-width: 1700px) {
-  * {
-    font-size: 150%;
+  h2 {
+    font-size: 67px;
+  }
+
+  .first-button {
+    margin-right: 250px;
+  }
+
+  p {
+    font-size: 38px;
+  }
+
+  a {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 120px;
   }
 
   body {

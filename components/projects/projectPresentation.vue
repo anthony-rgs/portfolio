@@ -45,12 +45,16 @@ export default {
 
 @media screen and (min-width: 1700px) {
   .project-resentation-container {
-    margin-top: -230px;
+    margin-top: -62px;
   }
 
   .project-resentation-container img {
     width: 1200px;
     height: 690px;
+  }
+
+  .title {
+    font-size: 120px;
   }
 }
 

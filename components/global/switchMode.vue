@@ -88,6 +88,12 @@ export default {
   .dark {
     right: 22px;
   }
+
+  .light,
+  .dark {
+    font-size: 20px;
+    top: 90px;
+  }
 }
 
 @media screen and (max-width: 1025px) {

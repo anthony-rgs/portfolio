@@ -47,7 +47,7 @@ export default {
 
   created() {
     if (process.browser) {
-      window.parent.document.title = "Anthony Ringressi - Maggle";
+      window.parent.document.title = "Anthony Ringressi - Around The Word";
     }
   },
 };

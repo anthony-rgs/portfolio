@@ -78,7 +78,7 @@ export default {
         },
         {
           image: "/projects/aroundtheword/aroundtheword-main.webp",
-          text: "Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
+          text: "Pour mon tout premier projet dev, j'ai réalisé un Scrabble sur le terminal avec de nombreuses fonctionnalités.",
           link: "/projects/aroundtheword",
         },
       ],

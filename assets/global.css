@@ -16,14 +16,7 @@
 * {
   --dark: #000;
   --light: #e6e6e6;
-  --color: #2f58d7;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  --color: #1c58f0;
 }
 
 body {
@@ -32,6 +25,16 @@ body {
   background-color: var(--dark);
   color: var(--light);
   transition: background 0.2s linear, color 0.2s linear;
+}
+
+::selection {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.bg-light ::selection {
+  background: var(--dark);
+  color: var(--light);
 }
 
 ::-webkit-scrollbar {
@@ -78,7 +81,7 @@ a {
   font-size: 1.25rem;
 
   border: none;
-  cursor: default;
+  cursor: pointer;
   padding: 0 0 5px;
   text-decoration: none;
 
@@ -96,11 +99,44 @@ a {
 
 .role-techs {
   display: flex;
-  justify-content: space-between;
+  gap: 200px;
 }
 
 .section {
   margin-top: 160px;
+}
+
+@media screen and (min-width: 1700px) {
+  * {
+    font-size: 150%;
+  }
+
+  body {
+    padding: 140px 120px 40px;
+  }
+
+  .section {
+    margin-top: 200px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  .link {
+    border-bottom: solid 5px var(--color);
+  }
+
+  .role-techs {
+    display: flex;
+    gap: 400px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .role-techs {
+    gap: 100px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -122,6 +158,12 @@ a {
 
   a {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .role-techs {
+    gap: 50px;
   }
 }
 

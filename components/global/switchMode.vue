@@ -69,6 +69,7 @@ export default {
   top: 50px;
   font-family: SCP-Regular;
   font-size: 0.813rem;
+  cursor: pointer;
 }
 
 .light {
@@ -77,6 +78,16 @@ export default {
 
 .dark {
   right: 37px;
+}
+
+@media screen and (min-width: 1700px) {
+  .light {
+    right: 25px;
+  }
+
+  .dark {
+    right: 22px;
+  }
 }
 
 @media screen and (max-width: 1025px) {

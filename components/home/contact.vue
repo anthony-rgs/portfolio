@@ -5,7 +5,12 @@
       <p>{{ text }}</p>
 
       <div class="links-container">
-        <a v-for="link in links" :key="link" :href="link[0]" target="blank">
+        <a
+          v-for="(link, indice) in links"
+          :key="indice"
+          :href="link[0]"
+          target="blank"
+        >
           <img :src="link[1]" alt="Icon" />
           <p>{{ link[2] }}</p>
         </a>
@@ -59,10 +64,22 @@ p:nth-child(1) {
 .links-container a {
   display: flex;
   padding: 0;
+  align-items: center;
 }
 
 .links-container img {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 1700px) {
+  p:nth-child(1) {
+    width: 700px;
+  }
+
+  .links-container img {
+    margin-right: 50px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 1025px) {

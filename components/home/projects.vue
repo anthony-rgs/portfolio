@@ -34,7 +34,7 @@ export default {
       projectNumber: 0,
       isActive: true,
       title: "Projets",
-      buttonText: "Voir le projet.",
+      buttonText: "En savoir plus.",
       projects: [
         {
           image: "/projects/latelier12/latelier12-main.webp",
@@ -75,6 +75,11 @@ export default {
           image: "/projects/mastermind/mastermind-main.webp",
           text: "Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
           link: "/projects/mastermind",
+        },
+        {
+          image: "/projects/aroundtheword/aroundtheword-main.webp",
+          text: "Mastermind sur 10 manches avec lecteur de musique, réalisé lors de mon premier projet scolaire en Front.",
+          link: "/projects/aroundtheword",
         },
       ],
     };
@@ -151,6 +156,7 @@ a {
 .after,
 .before {
   padding: 0 20px;
+  cursor: pointer;
 }
 
 .switch {
@@ -167,6 +173,31 @@ a {
 .active {
   opacity: 1;
   transition: opacity 0.4s ease;
+}
+
+@media screen and (min-width: 1700px) {
+  img,
+  .text-container {
+    width: 48%;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .switch-project {
+    margin-top: 160px;
+  }
+
+  .switch {
+    height: 60px;
+    width: 5px;
+  }
+
+  .after,
+  .before {
+    padding: 0 30px;
+  }
 }
 
 @media screen and (max-width: 1370px) {

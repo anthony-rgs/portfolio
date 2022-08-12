@@ -37,7 +37,7 @@ export default {
       siteText: "Voir le site.",
       siteLink: "https://colladraw.fun",
       role: "Designer & Développeur",
-      techsTitle: "Langages & Outils",
+      techsTitle: "Langages & Outil",
       techsText: "JS - Laravel - MySQL - Figma",
       gallery: [
         { url: "/projects/colladraw/colladraw-1.webp" },
@@ -64,6 +64,13 @@ export default {
 .date {
   top: 542px;
   right: 810px;
+}
+
+@media screen and (min-width: 1700px) {
+  .date {
+    top: 833px;
+    right: 1245px;
+  }
 }
 
 @media screen and (max-width: 1140px) {

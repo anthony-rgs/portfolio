@@ -13,8 +13,8 @@ export default {
     return {
       title: "Compétences",
       skills: [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript",
         "Vue.js",
         "Nuxt.js",
@@ -23,7 +23,6 @@ export default {
         "MySQL",
         "GitHub",
         "Git",
-        "Terminal",
         "Figma",
         "Strapi",
       ],

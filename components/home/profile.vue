@@ -5,7 +5,6 @@
         <p class="title">{{ name }}</p>
         <p class="title">{{ surname }}</p>
       </div>
-
       <img src="~assets/images/picture-me.webp" />
     </div>
     <div class="bar"></div>
@@ -33,8 +32,12 @@ export default {
   align-self: flex-end;
 }
 
+.title:nth-child(1) {
+  margin-bottom: -20px;
+}
+
 .title:nth-child(2) {
-  margin: 0 0 -40px 62px;
+  margin: 0 0 -30px 62px;
 }
 
 img {
@@ -45,6 +48,21 @@ img {
   width: calc(100% + 120px);
   margin: 160px -120px 0;
   height: 3px;
+}
+
+@media screen and (min-width: 1700px) {
+  img {
+    height: 700px;
+  }
+
+  .bar {
+    height: 5px;
+    margin-top: 200px;
+  }
+
+  .title:nth-child(2) {
+    margin: 0 0 -25px 70px;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -89,6 +107,10 @@ img {
 @media screen and (max-width: 660px) {
   .title {
     font-size: 2rem;
+  }
+
+  .title:nth-child(1) {
+    margin-bottom: -5px;
   }
 
   .title:nth-child(2) {

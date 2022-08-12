@@ -1,9 +1,11 @@
 <template>
-  <div class="portfolio-container" :class="{ show: isActive }">
-    <SwitchMode />
-    <Nuxt />
-    <Footer />
-  </div>
+  <client-only>
+    <tbody class="portfolio-container" :class="{ show: isActive }">
+      <SwitchMode />
+      <Nuxt />
+      <Footer />
+    </tbody>
+  </client-only>
 </template>
 
 <script>

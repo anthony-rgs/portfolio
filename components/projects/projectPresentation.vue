@@ -43,6 +43,17 @@ export default {
   height: 428px;
 }
 
+@media screen and (min-width: 1700px) {
+  .project-resentation-container {
+    margin-top: -230px;
+  }
+
+  .project-resentation-container img {
+    width: 1200px;
+    height: 690px;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .project-resentation-container {
     margin-top: -70px;

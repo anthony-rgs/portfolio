@@ -14,7 +14,8 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Portfolio de Anthony Ringressi étudiant à Hetic",
+        content:
+          "Portfolio de Anthony Ringressi, étudiant en deuxième année à Hetic.",
       },
       { name: "format-detection", content: "telephone=no" },
     ],

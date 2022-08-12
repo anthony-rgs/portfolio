@@ -24,6 +24,12 @@ export default {
   font-size: 0.813rem;
 }
 
+@media screen and (min-width: 1700px) {
+  .back-button {
+    left: 24px;
+  }
+}
+
 @media screen and (max-width: 1116px) {
   .back-button {
     top: 65px;

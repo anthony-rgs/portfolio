@@ -28,6 +28,17 @@ p {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 1700px) {
+  .about {
+    width: 70%;
+    margin-top: 200px;
+  }
+
+  p {
+    margin-bottom: -80px;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .about {
     width: 650px;

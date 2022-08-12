@@ -66,6 +66,13 @@ export default {
   right: 800px;
 }
 
+@media screen and (min-width: 1700px) {
+  .date {
+    top: 813px;
+    right: 1225px;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .date {
     top: 487px;

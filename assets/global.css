@@ -222,8 +222,7 @@ a {
     border-bottom: solid 2px var(--color);
   }
 
-  .after,
-  .before {
+  .switch {
     width: 2px;
   }
 }

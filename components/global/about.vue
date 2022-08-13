@@ -62,7 +62,7 @@ p {
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 </style>

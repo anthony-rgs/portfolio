@@ -217,6 +217,15 @@ a {
   a {
     font-size: 1rem;
   }
+
+  .link {
+    border-bottom: solid 2px var(--color);
+  }
+
+  .after,
+  .before {
+    width: 2px;
+  }
 }
 
 @media screen and (max-width: 420px) {

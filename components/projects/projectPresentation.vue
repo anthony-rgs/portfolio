@@ -120,5 +120,9 @@ export default {
   .project-resentation-container {
     margin-top: 0px;
   }
+
+  img {
+    margin-top: 30px;
+  }
 }
 </style>

@@ -6,6 +6,7 @@
         :src="projects[projectNumber].image"
         alt="Image"
         v-bind:class="{ active: isActive }"
+        rel="preload"
       />
       <div class="bar"></div>
       <div class="text-container" v-bind:class="{ active: isActive }">

@@ -7,6 +7,7 @@
         :key="indice"
         :src="image.url"
         alt="Project image"
+        rel="preload"
       />
     </div>
   </section>

@@ -18,6 +18,4 @@ export default {
     };
   },
 };
-
-const image = new Image();
 </script>

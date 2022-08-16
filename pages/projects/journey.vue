@@ -41,9 +41,9 @@ export default {
       techsTitle: "Langages & Outil",
       techsText: "React - PHP - Figma",
       gallery: [
-        { url: "/projects/journey/journey-1.webp" },
-        { url: "/projects/journey/journey-2.webp" },
-        { url: "/projects/journey/journey-3.webp" },
+        "/projects/journey/journey-1.webp",
+        "/projects/journey/journey-2.webp",
+        "/projects/journey/journey-3.webp",
       ],
     };
   },

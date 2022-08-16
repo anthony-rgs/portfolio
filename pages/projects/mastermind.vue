@@ -40,10 +40,10 @@ export default {
       techsTitle: "Langages",
       techsText: "HTML - CSS - JS",
       gallery: [
-        { url: "/projects/mastermind/mastermind-1.webp" },
-        { url: "/projects/mastermind/mastermind-2.webp" },
-        { url: "/projects/mastermind/mastermind-3.webp" },
-        { url: "/projects/mastermind/mastermind-4.webp" },
+        "/projects/mastermind/mastermind-1.webp",
+        "/projects/mastermind/mastermind-2.webp",
+        "/projects/mastermind/mastermind-3.webp",
+        "/projects/mastermind/mastermind-4.webp",
       ],
     };
   },

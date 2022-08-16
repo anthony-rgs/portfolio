@@ -1,13 +1,13 @@
 <template>
   <section class="section gallery">
+    <ImagesLoader :images="this.images" />
     <h2>{{ title }}</h2>
     <div class="container">
       <img
         v-for="(image, indice) in images"
         :key="indice"
-        :src="image.url"
+        :src="image"
         alt="Project image"
-        rel="preload"
       />
     </div>
   </section>

@@ -40,10 +40,10 @@ export default {
       techsTitle: "Langages & Outil",
       techsText: "JS - Laravel - MySQL - Figma",
       gallery: [
-        { url: "/projects/colladraw/colladraw-1.webp" },
-        { url: "/projects/colladraw/colladraw-2.webp" },
-        { url: "/projects/colladraw/colladraw-3.webp" },
-        { url: "/projects/colladraw/colladraw-4.webp" },
+        "/projects/colladraw/colladraw-1.webp",
+        "/projects/colladraw/colladraw-2.webp",
+        "/projects/colladraw/colladraw-3.webp",
+        "/projects/colladraw/colladraw-4.webp",
       ],
     };
   },

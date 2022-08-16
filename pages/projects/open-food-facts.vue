@@ -33,10 +33,10 @@ export default {
       techsTitle: "Outils",
       techsText: "Figma - Photoshop",
       gallery: [
-        { url: "/projects/openfoodfacts/openfoodfacts-1.webp" },
-        { url: "/projects/openfoodfacts/openfoodfacts-2.webp" },
-        { url: "/projects/openfoodfacts/openfoodfacts-3.webp" },
-        { url: "/projects/openfoodfacts/openfoodfacts-4.webp" },
+        "/projects/openfoodfacts/openfoodfacts-1.webp",
+        "/projects/openfoodfacts/openfoodfacts-2.webp",
+        "/projects/openfoodfacts/openfoodfacts-3.webp",
+        "/projects/openfoodfacts/openfoodfacts-4.webp",
       ],
     };
   },

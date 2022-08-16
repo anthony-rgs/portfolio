@@ -40,10 +40,10 @@ export default {
       techsTitle: "Langages & Outil",
       techsText: "HTML - CSS - JS - Figma",
       gallery: [
-        { url: "/projects/latelier12/latelier12-1.webp" },
-        { url: "/projects/latelier12/latelier12-2.webp" },
-        { url: "/projects/latelier12/latelier12-3.webp" },
-        { url: "/projects/latelier12/latelier12-4.webp" },
+        "/projects/latelier12/latelier12-1.webp",
+        "/projects/latelier12/latelier12-2.webp",
+        "/projects/latelier12/latelier12-3.webp",
+        "/projects/latelier12/latelier12-4.webp",
       ],
     };
   },

@@ -35,12 +35,12 @@ export default {
       techsTitle: "Langage",
       techsText: "Python",
       gallery: [
-        { url: "/projects/aroundtheword/aroundtheword-1.webp" },
-        { url: "/projects/aroundtheword/aroundtheword-2.webp" },
-        { url: "/projects/aroundtheword/aroundtheword-3.webp" },
-        { url: "/projects/aroundtheword/aroundtheword-4.webp" },
-        { url: "/projects/aroundtheword/aroundtheword-5.webp" },
-        { url: "/projects/aroundtheword/aroundtheword-6.webp" },
+        "/projects/aroundtheword/aroundtheword-1.webp",
+        "/projects/aroundtheword/aroundtheword-2.webp",
+        "/projects/aroundtheword/aroundtheword-3.webp",
+        "/projects/aroundtheword/aroundtheword-4.webp",
+        "/projects/aroundtheword/aroundtheword-5.webp",
+        "/projects/aroundtheword/aroundtheword-6.webp",
       ],
     };
   },

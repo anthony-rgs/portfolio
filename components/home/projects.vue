@@ -1,5 +1,7 @@
 <template>
   <section class="section">
+    <ImagesLoader :images="this.images" />
+
     <h2>{{ title }}</h2>
     <div class="project-container">
       <img
@@ -36,6 +38,17 @@ export default {
       isActive: true,
       title: "Projets",
       buttonText: "En savoir plus.",
+      images: [
+        "/projects/latelier12/latelier12-main.webp",
+        "/projects/pokemon/pokemon-main.webp",
+        "/projects/journey/journey-main.webp",
+        "/projects/wanned/wanned-main.webp",
+        "/projects/maggle/maggle-main.webp",
+        "/projects/openfoodfacts/openfoodfacts-main.webp",
+        "/projects/colladraw/colladraw-main.webp",
+        "/projects/mastermind/mastermind-main.webp",
+        "/projects/aroundtheword/aroundtheword-main.webp",
+      ],
       projects: [
         {
           image: "/projects/latelier12/latelier12-main.webp",

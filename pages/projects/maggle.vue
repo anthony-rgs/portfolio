@@ -35,10 +35,10 @@ export default {
       techsTitle: "Langages & Outil",
       techsText: "JS - MySQL - PHP - Figma",
       gallery: [
-        { url: "/projects/maggle/maggle-1.webp" },
-        { url: "/projects/maggle/maggle-2.webp" },
-        { url: "/projects/maggle/maggle-3.webp" },
-        { url: "/projects/maggle/maggle-4.webp" },
+        "/projects/maggle/maggle-1.webp",
+        "/projects/maggle/maggle-2.webp",
+        "/projects/maggle/maggle-3.webp",
+        "/projects/maggle/maggle-4.webp",
       ],
     };
   },

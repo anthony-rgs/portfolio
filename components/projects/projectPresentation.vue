@@ -1,5 +1,6 @@
 <template>
   <section class="project-resentation-container">
+    <ImageLoader :image="this.image" />
     <a href="/" class="title">{{ title }}</a>
     <div>
       <p class="date">{{ date }}</p>

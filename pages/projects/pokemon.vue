@@ -40,8 +40,8 @@ export default {
       techsTitle: "Langages",
       techsText: "HTML - CSS - Vue.js",
       gallery: [
-        { url: "/projects/pokemon/pokemon-1.webp" },
-        { url: "/projects/pokemon/pokemon-2.webp" },
+        "/projects/pokemon/pokemon-1.webp",
+        "/projects/pokemon/pokemon-2.webp",
       ],
     };
   },

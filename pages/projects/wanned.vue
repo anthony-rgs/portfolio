@@ -40,10 +40,10 @@ export default {
       techsTitle: "Langages",
       techsText: "HTML - CSS - JS",
       gallery: [
-        { url: "/projects/wanned/wanned-1.webp" },
-        { url: "/projects/wanned/wanned-2.webp" },
-        { url: "/projects/wanned/wanned-3.webp" },
-        { url: "/projects/wanned/wanned-4.webp" },
+        "/projects/wanned/wanned-1.webp",
+        "/projects/wanned/wanned-2.webp",
+        "/projects/wanned/wanned-3.webp",
+        "/projects/wanned/wanned-4.webp",
       ],
     };
   },

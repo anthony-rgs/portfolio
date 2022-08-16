@@ -1,11 +1,12 @@
 <template>
   <div class="container-profile">
+    <ImageLoader :image="this.image" />
     <div class="profile-informations">
       <div class="name">
         <p class="title">{{ name }}</p>
         <p class="title">{{ surname }}</p>
       </div>
-      <img src="~assets/images/picture-me.webp" />
+      <img :src="this.image" />
     </div>
     <div class="bar"></div>
   </div>
@@ -15,6 +16,7 @@
 export default {
   data() {
     return {
+      image: "/picture-me.webp",
       name: "Anthony",
       surname: "Ringressi",
     };

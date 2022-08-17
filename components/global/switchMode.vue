@@ -66,7 +66,7 @@ export default {
 .light,
 .dark {
   position: fixed;
-  top: 50px;
+  top: 60px;
   font-family: SCP-Regular;
   font-size: 0.813rem;
   cursor: pointer;
@@ -103,6 +103,11 @@ export default {
 
   .dark {
     right: 27px;
+  }
+
+  .light,
+  .dark {
+    top: 52px;
   }
 }
 

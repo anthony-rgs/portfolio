@@ -13,9 +13,9 @@
       <div class="bar"></div>
       <div class="text-container" v-bind:class="{ active: isActive }">
         <p>{{ projects[projectNumber].text }}</p>
-        <a class="link" :href="projects[projectNumber].link">{{
+        <NuxtLink class="link" :to="projects[projectNumber].link">{{
           buttonText
-        }}</a>
+        }}</NuxtLink>
       </div>
     </div>
     <div class="switch-project">
@@ -66,11 +66,6 @@ export default {
           link: "/projects/journey",
         },
         {
-          image: "/projects/wanned/wanned-main.webp",
-          text: "RPG réalisé dans le cadre d'un projet scolaire. Plusieurs épreuves sont à relever comme des énigmes ou des combats. ",
-          link: "/projects/wanned",
-        },
-        {
           image: "/projects/maggle/maggle-main.webp",
           text: "Projet scolaire en back. Le but était de réaliser un réseau social avec de nombreuses fonctionnalités.",
           link: "/projects/maggle",
@@ -79,6 +74,11 @@ export default {
           image: "/projects/openfoodfacts/openfoodfacts-main.webp",
           text: "L'objectif de ce projet scolaire était de nous apprendre à utiliser Figma en effectuant la refonte du site Open Food Facts. ",
           link: "/projects/open-food-facts",
+        },
+        {
+          image: "/projects/wanned/wanned-main.webp",
+          text: "RPG réalisé dans le cadre d'un projet scolaire. Plusieurs épreuves sont à relever comme des énigmes ou des combats. ",
+          link: "/projects/wanned",
         },
         {
           image: "/projects/colladraw/colladraw-main.webp",

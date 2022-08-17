@@ -56,33 +56,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   --color: #f0330a;
 }
+</style>
 
+<style>
 .date {
-  top: 527px;
+  top: 588px;
   right: 800px;
 }
 
 @media screen and (min-width: 1700px) {
   .date {
-    top: 813px;
+    top: 895px;
     right: 1225px;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .date {
-    top: 487px;
+    top: 547px;
     right: 715px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   .date {
-    top: 477px;
+    top: 557px;
     right: 700px;
   }
 }

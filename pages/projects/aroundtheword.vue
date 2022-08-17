@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   --color: #fff;
 }
@@ -61,28 +61,31 @@ export default {
 .bg-light * {
   --color: #000;
 }
+</style>
 
+<style>
 .date {
-  top: 519px;
+  top: 579px;
   right: 790px;
 }
 
 @media screen and (min-width: 1700px) {
   .date {
-    top: 801px;
+    top: 882px;
     right: 1200px;
   }
 }
+
 @media screen and (max-width: 1140px) {
   .date {
-    top: 480px;
+    top: 540px;
     right: 705px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   .date {
-    top: 470px;
+    top: 550px;
     right: 680px;
   }
 }

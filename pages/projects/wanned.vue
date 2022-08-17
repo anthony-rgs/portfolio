@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="project-section">
     <ButtonsBack />
     <ProjectsProjectPresentation
       :title="this.title"
@@ -56,33 +56,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   --color: #472d3d;
 }
+</style>
 
+<style>
 .date {
-  top: 540px;
+  top: 601px;
   right: 810px;
 }
 
 @media screen and (min-width: 1700px) {
   .date {
-    top: 834px;
+    top: 915px;
     right: 1235px;
   }
 }
 
 @media screen and (max-width: 1140px) {
   .date {
-    top: 497px;
+    top: 558px;
     right: 720px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   .date {
-    top: 488px;
+    top: 568px;
     right: 710px;
   }
 }

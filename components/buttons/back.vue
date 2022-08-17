@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="/" class="back-button">{{ text }}</a>
+    <NuxtLink class="back-button" to="/">{{ text }}</NuxtLink>
   </div>
 </template>
 

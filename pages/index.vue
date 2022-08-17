@@ -19,3 +19,9 @@ export default {
   },
 };
 </script>
+
+<style>
+* {
+  --color: #1c58f0;
+}
+</style>

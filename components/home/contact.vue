@@ -33,11 +33,7 @@ export default {
           "Anthony Ringressi",
         ],
 
-        [
-          "mailto:contact@anth.ooo?subject=Coucou :)",
-          "/icons/mail.svg",
-          "contact@anth.ooo",
-        ],
+        ["mailto:contact@anth.ooo", "/icons/mail.svg", "contact@anth.ooo"],
         ["https://github.com/anthony-rgs", "/icons/github.svg", "anthony-rgs"],
       ],
     };
@@ -113,7 +109,7 @@ p:nth-child(1) {
   }
 
   .links-container img {
-    margin-right: 20px;
+    margin: 0 20px 0 0;
     width: 15px;
   }
 

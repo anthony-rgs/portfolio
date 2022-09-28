@@ -20,6 +20,7 @@ export default {
         "Nuxt.js",
         "Python",
         "PHP",
+        "Adonis.js",
         "MySQL",
         "GitHub",
         "Git",
